@@ -2,6 +2,10 @@
 
 import matplotlib.pyplot as plt
 
+# Data set
+x_values = [1, 2, 3, 4, 5]
+y_values = [2, 4, 9, 16, 25]
+
 # Apply style to chart
 plt.style.use('seaborn')
 
@@ -9,7 +13,8 @@ plt.style.use('seaborn')
 fig, ax = plt.subplots()
 
 # Use scatter() method to plot a single point with x and y coordinates
-ax.scatter(2, 4, s=200)
+# s argument sets the size of the dots used to draw the graph
+ax.scatter(x_values, y_values, s=100)
 
 # Set chart title and label axes
 ax.set_title('Square Numbers', fontsize=24)
