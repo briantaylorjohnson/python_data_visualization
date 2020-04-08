@@ -8,7 +8,7 @@ from random_walk import RandomWalk
 while True:
     # Make a random walk
     # Adding the argument increases the points to 50,000 from the default of 5,000
-    rw = RandomWalk(50_000)
+    rw = RandomWalk(50000)
     rw.fill_walk()
 
     # Plot the points on the walk
