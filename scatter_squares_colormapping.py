@@ -33,3 +33,8 @@ ax.axis([0, 1100, 0, 1100000])
 
 # Render chart
 plt.show()
+
+"""
+Save chart to image file -- this must replace the plt.show() method above or a white box is created:
+plt.savefig('squares_plot.png', bbox_inches='tight')
+"""
