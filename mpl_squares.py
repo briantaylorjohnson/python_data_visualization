@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25]
 
+# Specifies a style to be used in the matplotlib library
+plt.style.use('seaborn')
+
 # fig represents the entire figure or collection of plots
 # ax represents a single plot in the figure
 fig, ax = plt.subplots()
