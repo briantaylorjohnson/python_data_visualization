@@ -1,4 +1,4 @@
-# Comma-Separated Values (CSV) Parsing: Using the datetime() Method
+# Comma-Separated Values (CSV) Parsing: Visualization with Longer Timeframe 
 
 # Imports the Python CSV module
 import csv
@@ -10,7 +10,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 # Specifies the file we want to open
-filename = 'data/sitka_weather_07-2018_simple.csv'
+filename = 'data/sitka_weather_2018_simple.csv'
 
 # Opens the file with the path in the filename variable
 with open(filename) as f:
@@ -40,7 +40,7 @@ with open(filename) as f:
     ax.plot(dates, highs, c='red')
 
     # Format plot title, axis labels, and ticks 
-    plt.title('Daily High Temperature - July 2018', fontsize=24)
+    plt.title('Daily High Temperature - 2018', fontsize=24)
     plt.xlabel('', fontsize=16)
     fig.autofmt_xdate()
     plt.ylabel('Temperature (F)', fontsize=16)
