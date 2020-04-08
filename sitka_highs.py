@@ -1,4 +1,4 @@
-# Comma-Separated Values (CSV) Parsing
+# Comma-Separated Values (CSV) Parsing: Basic Read and Enumerating
 
 # Imports the Python CSV module
 import csv
@@ -20,4 +20,3 @@ with open(filename) as f:
     for index, column_header in enumerate(header_row):
         print(index, column_header)
 
-    
