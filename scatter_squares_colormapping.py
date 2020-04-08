@@ -16,8 +16,9 @@ fig, ax = plt.subplots()
 
 # Use scatter() method to plot a single point with x and y coordinates
 # s argument sets the size of the dots used to draw the graph
-# c argument sets the color of the dots/line used to draw the graph; RGB colors in the decimal form can be used, too -- 'c=(0, 0.8, 0)'
-ax.scatter(x_values, y_values, c='red', s=10)
+# In order to use a colormap, the program must know which data set to use to determine the color -- this is passed through the c argument
+# A color map must then be provided in the cmap argument, as well
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # Set chart title and label axes
 ax.set_title('Square Numbers', fontsize=24)
