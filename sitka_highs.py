@@ -15,4 +15,9 @@ with open(filename) as f:
     # next() function in CSV module reads each line
     # Here we read the first line to get the header row and print it out in the terminal
     header_row = next(reader)
-    print(header_row)
+    
+    # enumerate() function returns the index and value of each item in the header_row list 
+    for index, column_header in enumerate(header_row):
+        print(index, column_header)
+
+    
