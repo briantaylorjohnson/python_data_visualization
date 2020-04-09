@@ -28,3 +28,12 @@ print(f'\t- Repository: {repo_dict["html_url"]}')
 print(f'\t- Created: {repo_dict["created_at"]}')
 print(f'\t- Updated: {repo_dict["updated_at"]}')
 print(f'\t- Description: {repo_dict["description"]}')
+
+# Loop through a number of repositories to be visualized
+print('\nSelected information about each repository: ')
+for repo_dict in repo_dicts:
+    print(f'\n\t- Name: {repo_dict["name"]}')
+    print(f'\t- Owner: {repo_dict["owner"]["login"]}')
+    print(f'\t- Stars: {repo_dict["stargazers_count"]}')
+    print(f'\t- Repository: {repo_dict["html_url"]}')
+    print(f'\t- Description: {repo_dict["description"]}')
